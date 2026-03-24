@@ -1,0 +1,30 @@
+.btn-primary {
+  display: inline-block;
+  padding: 18px 45px;
+  font-family: $f-main;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all $transition-speed ease;
+
+  &, &.contact__btn-send, &.btn-view-all {
+    background-color: $color-dark !important;
+    color: $color-white !important;
+    border: 2px solid $color-dark !important;
+  }
+
+  &:hover {
+    background-color: transparent !important;
+    color: $color-dark !important;
+    border-color: $color-dark !important;
+  }
+
+  &:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+}
