@@ -1,0 +1,46 @@
+.benefits-custom {
+  width: 100%;
+  padding: 100px 0;
+
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 0 120px;
+  }
+
+  &__title-col {
+    flex: 1;
+  }
+
+  &__content-col {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #292929;
+  }
+
+  &__list {
+    margin: 0 0 24px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #616161;
+  }
+}
