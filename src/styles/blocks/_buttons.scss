@@ -22,6 +22,10 @@
     background-color: $color-dark !important;
     color: $color-white !important;
     border: 2px solid $color-dark !important;
+    }
+
+  &.contact__btn-send {
+    width: 100%;
   }
 
   &:hover {
