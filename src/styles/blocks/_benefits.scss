@@ -1,53 +1,51 @@
+@import '../utils/vars';
+
 .benefits-custom {
   width: 100%;
-  padding: 0 0 100px;
-
-  .btn-view-all {
-    margin: 0 auto 120px;
-    display: flex;
-  }
+  padding-bottom: 60px;
 
   &__wrapper {
     display: flex;
-    gap: 24px;
-    padding: 0 120px;
+    flex-direction: column; // Pionowo na mobile
+    gap: 40px;
+
+    @media (min-width: 1200px) {
+      flex-direction: row !important; // Poziomo na desktop
+      gap: 24px;
+    }
   }
 
-  &__title-col {
-    flex: 1;
-  }
+  &__title-col { flex: 1; }
 
   &__content-col {
     flex: 1;
+    padding-top: 40px; // Mniejszy na mobile
+    @media (min-width: 1200px) {
+      padding-top: 120px; // Twoje 120px na desktop
+    }
   }
 
   &__title {
-    margin: 0;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
-    line-height: 1.4;
-    color: #292929;
-  }
-
-  &__list {
-    margin: 0 0 24px;
-    padding: 0;
-    list-style: none;
+    @media (min-width: 1200px) { font-size: 48px; }
   }
 
   &__item {
-    margin-bottom: 12px;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
-    line-height: 1.4;
+    line-height: 1.8;
+    margin-bottom: 16px;
   }
 
   &__description {
-    margin: 0;
     font-size: 16px;
     line-height: 1.5;
     color: #616161;
-    max-width: 410px;
+    max-width: 100%;
+
+    @media (min-width: 1200px) {
+      max-width: 410px;
+    }
   }
 }
