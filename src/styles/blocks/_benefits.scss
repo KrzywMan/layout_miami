@@ -3,14 +3,17 @@
 .benefits-custom {
   width: 100%;
   padding-bottom: 60px;
+  @media (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
 
   &__wrapper {
     display: flex;
-    flex-direction: column; // Pionowo na mobile
+    flex-direction: column;
     gap: 40px;
 
     @media (min-width: 1200px) {
-      flex-direction: row !important; // Poziomo na desktop
+      flex-direction: row !important;
       gap: 24px;
     }
   }
@@ -19,9 +22,9 @@
 
   &__content-col {
     flex: 1;
-    padding-top: 40px; // Mniejszy na mobile
+    padding-top: 20px;
     @media (min-width: 1200px) {
-      padding-top: 120px; // Twoje 120px na desktop
+      padding-top: 120px;
     }
   }
 

@@ -13,8 +13,18 @@
   }
 }
 
+&__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 .category-item {
   margin-bottom: 40px;
+  align-items: center;
+  text-align: center;
 
   &:last-child {
     margin-bottom: 0;
@@ -23,8 +33,8 @@
   &__image-container {
     display: grid;
     gap: 16px;
-    // MOBILE: 2 zdjęcia w jednej linii (130x130)
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 
     @media (min-width: 768px) {
       // TABLET: Specyficzne wymiary z Twoich wytycznych
